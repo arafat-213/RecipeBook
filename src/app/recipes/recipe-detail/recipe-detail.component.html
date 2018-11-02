@@ -1,18 +1,18 @@
 <div class="row">
     <div class="col-xs-12">
-        <img src="https://www.ndtv.com/cooks/images/dum.murg.ki.kacchi.biryani.jpg" alt="Yahan bhi ek image hua karti thi" class="img-responsive">
+        <img [src]="recipe.imagePath" alt="Yahan bhi ek image hua karti thi" class="img-responsive">
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-12">
-        <h1>Recipe Name</h1>
+        <h1>{{recipe.name}}</h1>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
+        <div class="btn-group pull-right">
             <button type="button" class="btn btn-primary dropdown-toggle">
         Manage recipe <span class=caret></span>
       </button>
@@ -25,9 +25,11 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        Description
+    <strong>
+    <div class="col-xs-12" style="font-size: 22pt">
+        {{recipe.description}}
     </div>
+  </strong>
 </div>
 
 <div class="row">
